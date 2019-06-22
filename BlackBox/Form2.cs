@@ -114,6 +114,7 @@ namespace BlackBox
             {
                 buttonForAnswer.BackColor = Color.GreenYellow;
                 MessageBox.Show("Праильно :)");
+                answerTruthCheck = true;
                 this.Close();               
             }
             else
@@ -121,7 +122,7 @@ namespace BlackBox
                 buttonForAnswer.BackColor = Color.Red;
                 MessageBox.Show("Не правильно :(");
                 textBoxForAnswers.Text = null;
-                answerTruthCheck = true;
+                answerTruthCheck = false;
             }
           
         }
@@ -133,6 +134,8 @@ namespace BlackBox
             {
                 case 1:
                     {
+                        int a = 2;
+                        if (a % 2 == 0) a++;
                         return (input + 1);
                     }
 
