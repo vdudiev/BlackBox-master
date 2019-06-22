@@ -134,8 +134,6 @@ namespace BlackBox
             {
                 case 1:
                     {
-                        int a = 2;
-                        if (a % 2 == 0) a++;
                         return (input + 1);
                     }
 
